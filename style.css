@@ -8,12 +8,15 @@ body {
     background-color: #f3dfdf; 
     color: #333;
     line-height: 35px;
+    min-height: 100%;
+    min-width: 100%;
 }
 header {
     background-color: #5d1a1a;
     color: white;
     padding: 20px 0;
     text-align: center;
+    width: 100%;
 }
 
 header h1 {
@@ -22,9 +25,9 @@ header h1 {
 
 section a {
     color: #5d1a1a;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
-     transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 section a:hover {
     color: #ff0062; 
@@ -36,6 +39,27 @@ nav ul {
     justify-content: center;
     gap: 30px; 
 } 
+nav .link-voltar {
+    position: absolute;
+    left: 20px;
+    
+}
+nav .link-voltar a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f3dfdf;
+    color: #5d1a1a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav .link-voltar a:hover {
+    background-color: #5d1a1a;
+    color: #f3dfdf;
+}
+
+
 nav a {
     color: white;
     text-decoration: none;
@@ -67,6 +91,13 @@ img {
     display: block;
 }
 
+footer {
+    background-color: #5d1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
 .carrossel-slides {
     display: flex;
     overflow-x: auto;
@@ -95,11 +126,4 @@ img {
     border-radius: 8px;
     text-align: center; 
     box-sizing: border-box;
-}
-
-footer {
-    background-color: #5d1a1a;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
 }
