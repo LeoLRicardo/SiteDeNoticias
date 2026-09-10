@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 header {
     background-color: #5d1a1a;
@@ -28,6 +29,7 @@ header {
 
 header h1 {
     margin-bottom: 20px;
+    overflow-wrap: break-word;
 }
 
 section a {
